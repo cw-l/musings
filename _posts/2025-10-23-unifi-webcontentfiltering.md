@@ -16,11 +16,11 @@ The UniFi UCG Ultra allows for paid web content filtering via Proofpoint & Cloud
 UniFi allows users to use a custom DNS per network. You could also use the same DNS provider for the entire setup by configuring at WAN. I'd configured Quad9 for my home lab servers' network and wanted to have parental control for the kids' network. Stumbled across [NextDNS](https://nextdns.io) and it worked with the first attempt. I'm using their free-tier and the features are good enough for kids' network.
 
 ## Step 1: Create your [NextDNS account](https://my.nextdns.io/) and configure it
-![NextDNS Setup](/assets/img/nextdns-profile.png){: width="40%" height="auto"}
+![NextDNS Setup](/assets/img/nextdns-profile.png){: width="50%" height="auto"}
 Create a profile for this setup. I've static IP, so I linked it up. DDNS is also supported. Click ***Show advanced options*** to configure it.<br><br>
 
 There's a handful of options for you to configure at the ***Parental Control*** tab. I'd added all the categories to restrict access, and enabled these options ***Safe Search***, ***YouTube Restricted Mode*** and ***Block Bypass Methods***.
-![NextDNS Parental Control](/assets/img/nextdns-parentalcontrols.png){: width="35%" height="auto"}
+![NextDNS Parental Control](/assets/img/nextdns-parentalcontrols.png){: width="50%" height="auto"}
 
 ## Step 2: Configure the desired network on UniFi UCG Ultra to use NextDNS DNS servers
 On UniFi side, remember to remove any ***Content Filter*** that you might have placed on the desired network. Follow the numbering below to configure and you should be fine. Remember to click on ***Apply Changes***.
