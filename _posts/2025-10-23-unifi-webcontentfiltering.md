@@ -3,6 +3,7 @@ layout: post
 title:  "Implementing Web Content Filtering on UniFi UCG Ultra & NextDNS"
 background: '/img/bg-posts.jpg'
 date:   2025-10-23 21:30:00 +0800
+updated_date: 2025-11-04 13:30:00 +0800
 tags: unifi ucgultra nextdns webcontentfiltering parentalcontrols
 ---
 
@@ -10,6 +11,9 @@ tags: unifi ucgultra nextdns webcontentfiltering parentalcontrols
 This has been tested successfully on the following setup. 
 * UCG Ultra; UniFi OS 4.3.9 & Network 9.5.21
 * Client: Apple Macbook Air M1, iPhone 13 Pro
+
+Important caveat:
+* The Apple App Store app is categorised as gaming. So connecting to Apple App Store is restricted.
 
 The UniFi UCG Ultra allows for paid web content filtering via Proofpoint & Cloudflare. The basic content filtering applies to the category Adult & Malicious. Of course, the usual domains allow & deny functionality is provided.
 
