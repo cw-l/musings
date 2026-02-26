@@ -1,10 +1,13 @@
 ---
 layout: post
-title:  "Verifying custom domain for Github Pages"
+title: "Verifying custom domain for Github Pages"
 background: '/img/bg-posts.jpg'
-date:   2025-08-20 13:45:13 +0800
+date: 2025-08-20 13:45:13 +0800
 updated_date: 2025-09-09 23:49:00 +0800
-tags: custom domain github pages namecheap verify
+tags: 
+  - custom domain
+  - github pages
+  - namecheap
 ---
 
 This post isn't about all the pros of verifying our custom domain name in Github. You could [read](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages) more about the advantages of verifying your custom domain for your Github personal account, if keen. Instead, this post is about the how-to do it, and the weird encounter.
