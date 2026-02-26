@@ -1,9 +1,12 @@
 ---
 layout: post
-title:  "Compiling Kerbrute for ARM64"
+title: "Compiling Kerbrute for ARM64"
 background: '/img/bg-posts.jpg'
-date:   2025-08-31 10:25:18 +0800
-tags: kerbrute arm64
+date: 2025-08-31 10:25:18 +0800
+tags: 
+  - kerbrute
+  - arm64
+  - password spraying
 ---
 
 While there're many alternatives to Kerbrute, it's always good to have another tool in the box, especially for those using AMR64. Only tested on the *userenum* and *passwordspray* in Kali Linux ARM64, Macbook Pro M1.
