@@ -1,9 +1,12 @@
 ---
 layout: post
-title:  "Using custom subdomain for Github Pages website"
+title: "Using custom subdomain for Github Pages website"
 background: '/img/bg-posts.jpg'
-date:   2025-08-20 12:15:13 +0800
-tags: subdomain github pages namecheap
+date: 2025-08-20 12:15:13 +0800
+tags: 
+  - custom subdomain
+  - github pages
+  - namecheap
 ---
 
 Here's how to configure at both Github and Namecheap to use your own custom subdomain (for e.g., https://my.internet.life) to serve a Github Pages website.
