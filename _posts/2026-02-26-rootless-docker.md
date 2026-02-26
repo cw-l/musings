@@ -11,7 +11,7 @@ This has been tested successfully on the following setup.
 * Server: Ubuntu 24.04.4 LTS
 * Docker: Latest
 
-### References:
+### References
 * [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 * [Rootless Mode](https://docs.docker.com/engine/security/rootless/)
 * [Understanding the Docker USER Instruction](https://www.docker.com/blog/understanding-the-docker-user-instruction/)
