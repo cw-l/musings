@@ -1,10 +1,15 @@
 ---
 layout: post
-title:  "Implementing Web Content Filtering on UniFi UCG Ultra & NextDNS"
+title: "Implementing Web Content Filtering on UniFi UCG Ultra & NextDNS"
 background: '/img/bg-posts.jpg'
-date:   2025-10-23 21:30:00 +0800
+date: 2025-10-23 21:30:00 +0800
 updated_date: 2025-11-04 13:30:00 +0800
-tags: unifi ucgultra nextdns webcontentfiltering parentalcontrols
+tags: 
+  - UniFi
+  - UCG Ultra
+  - NextDNS
+  - Webcontent filtering
+  - Parental Controls
 ---
 
 
