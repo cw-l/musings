@@ -14,6 +14,8 @@ This has been tested successfully on the following setup.
 ### References:
 * [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 * [Rootless Mode](https://docs.docker.com/engine/security/rootless/)
+* [Understanding the Docker USER Instruction](https://www.docker.com/blog/understanding-the-docker-user-instruction/)
+* [Root by accident, privilege escalation using Docker](https://medium.com/@serafincpd/root-by-accident-privilege-escalation-using-docker-8f121079fa01)
 
 ### Theory
 1. Uninstall previous installation, if any, especially if docker was installed as part of Ubuntu installation.
