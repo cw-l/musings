@@ -3,7 +3,10 @@ layout: post
 title:  "(Passwordless) SSH using FIDO Key"
 background: '/img/bg-posts.jpg'
 date:   2025-08-18 18:18:18 +0800
-tags: fido ssh mfa
+tags: 
+  - fido
+  - ssh
+  - mfa
 ---
 
 
