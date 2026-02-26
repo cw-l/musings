@@ -1,14 +1,18 @@
 ---
 layout: post
-title:  "Rootless Docker with Ubuntu 24.04.4 LTS"
+title:  "Rootless Docker with Ubuntu 24.04 LTS"
 background: '/img/bg-posts.jpg'
 date:   2026-02-26 13:18:00 +0800
-tags: rootless docker ubuntu privilege escalation
+tags: 
+  - rootless
+  - docker
+  - ubuntu
+  - privilege escalation
 ---
 
 
 This has been tested successfully on the following setup. 
-* Server: Ubuntu 24.04.4 LTS
+* Server: Ubuntu 24.04 LTS
 * Docker: Latest
 
 ### References
