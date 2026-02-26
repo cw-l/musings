@@ -1,9 +1,15 @@
 ---
 layout: post
-title:  "Installing & running Authentik in rootless Docker"
+title: "Installing & running Authentik in rootless Docker"
 background: '/img/bg-posts.jpg'
-date:   2026-03-03 09:18:00 +0800
-tags: authentik rootless docker idp oidc
+date: 2026-03-03 09:18:00 +0800
+tags: 
+  - authentik
+  - rootless
+  - docker
+  - identity provider
+  - OpenID Connector
+  - OIDC
 ---
 
 
