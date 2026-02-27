@@ -56,3 +56,10 @@ docker compose up -d
 
 sudo loginctl enable-linger $USER
 ```
+
+### Recovery
+If you opt to run as rootless, and gotten yourself locked out of the system while configuring policies. Do this. A recovery token (`/recovery/use-token/<token>/`) valid for 1 minute will be generated for your access via the browser at `http://<ip>:9000/recovery/use-token/<token>/`.
+```bash
+cd ~/authentik/
+docker compose exec server ak create_recovery_key 1 <admin username>
+```
