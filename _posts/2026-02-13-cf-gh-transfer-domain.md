@@ -19,6 +19,6 @@ tags:
 
 Transferred my domain over to Cloudflare recently. So I had to configure the domain verification and subdomain (for Github Pages). Turns out to be rather straight forward.
 
-![Cloudflare DNS Setup](/assets/img/cf-cdomain-ghpages-config.png){: width="auto" height="auto"}
+![Cloudflare DNS Setup](/assets/img/cf-cdomain-ghpages-config.png){: width="80%" height="auto"}
 
-![Cloudflare DNS Setup](/assets/img/cf-gh-cdomain-verify.png){: width="auto" height="auto"}
+![Cloudflare DNS Setup](/assets/img/cf-gh-cdomain-verify.png){: width="80%" height="auto"}
