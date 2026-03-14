@@ -1,0 +1,11 @@
+# .github/workflows/scheduled-build.yml
+name: Scheduled Build
+on:
+  schedule:
+    - cron: '0 16 * * *'  # midnight UTC+8 (Singapore)
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "Triggering rebuild"
