@@ -38,24 +38,24 @@ It is possible to implement ZTA via Segmentation in a home environment with a re
 After enabling ZBF in UCG Ultra, six default zones and policies would be created and enabled. You only need to assign networks (segments/VLANs/subnets) into its appropriate zone. Each network can only be assigned to one zone. You can also create additional custom zones. You could create a network for your laptops, PCs, tablets and smartphones and assign them to the default Internal zone. Next, you could group all your IoT devices, such as Smart TV, network printer, gaming console, digital lock, fan, CCTV, etc, logically in an IoT network and assign it into the DMZ. With these, you have done both Zone and Network segmentation.
 
 You could then create policies to control traffic between zones or isolate a zone from others. Within each zone, you could also prevent networks from interacting with each other.
-![UniFi ZBF](/assets/img/UniFi-ZBF.png){: width="80%" height="auto"}
+![UniFi ZBF](/assets/img/unifi-zbf.png){: width="80%" height="auto"}
 
 The default and custom policies are shown in the _Zone Matrix_. The first column represents the source zones, while the first row represents the destination zones. The policies control traffic flow between the zones.
-![UniFi ZBF Zone Matrix](/assets/img/UniFi-ZoneMatrix.png){: width="80%" height="auto"}
+![UniFi ZBF Zone Matrix](/assets/img/unifi-zonematrix.png){: width="80%" height="auto"}
 
 ## Step 2: Enable Network Isolation & Create Custom Policy (Optional)
 Typically, you do not want your IoT devices to be initiating communication to your work or personal laptop. Most of the time, your IoT devices do not have any legit purposes in doing so. By default, devices in DMZ are not permitted to initiate communication with the Internal zone.
 
 If you've a compromised IoT device, it will be not be able to perform port scanning or login attempts to your Internal zone.
-![UniFi Network Isolation](/assets/img/UniFi-Network-Isolation.png){: width="80%" height="auto"}
+![UniFi Network Isolation](/assets/img/unifi-network-isolation.png){: width="80%" height="auto"}
 
 Conversely, we do want our Internal zone devices to initiate communication with the IoT devices, for e.g., sending print jobs to the printer, changing passwords and upgrading firmware. This is can handled by a custom policy, to allow your specific devices to reach the DMZ.
-![UniFi Network Isolation](/assets/img/UniFi-Zones-Custom-Policy.png){: width="80%" height="auto"}
+![UniFi Network Isolation](/assets/img/unifi-zones-custom-policy.png){: width="80%" height="auto"}
 
 ## Step 3: Monitor Your Network
 You could monitor your network for threats via the Insights and Logs (Security events). These allow you to monitor for suspicious lateral movements between zones as well as blocked traffic.
-![UniFi Insights](/assets/img/UniFi-Insights.png){: width="80%" height="auto"}
-![UniFi Log > Security](/assets/img/UniFi-Syslog-Security.png){: width="80%" height="auto"}
+![UniFi Insights](/assets/img/unifi-insights.png){: width="80%" height="auto"}
+![UniFi Log > Security](/assets/img/unifi-syslog-security.png){: width="80%" height="auto"}
 
 With a reasonable price, one could enjoy the security that ZTA offers. 
 
