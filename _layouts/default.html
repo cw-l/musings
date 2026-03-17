@@ -18,19 +18,7 @@
 
   <script src="/assets/vendor/glightbox/glightbox.min.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      document.querySelectorAll("article p").forEach(function(p) {
-        const img = p.querySelector("img");
-        if (img && img.parentElement.tagName.toLowerCase() !== "a") {
-          const a = document.createElement("a");
-          a.href = img.src;
-          a.className = "glightbox";
-          p.replaceChild(a, img);
-          a.appendChild(img);
-        }
-      });
-      GLightbox({ selector: 'a.glightbox' });
-    });
+    const lightbox = GLightbox({ selector: '.glightbox' });
   </script>
   
   {% include google-analytics.html %}
