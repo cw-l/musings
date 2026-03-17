@@ -19,13 +19,14 @@
   <script src="/assets/vendor/glightbox/glightbox.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      document.querySelectorAll("article img").forEach(function(img) {
-        if (img.parentElement.tagName.toLowerCase() !== "a") {
-          const wrapper = document.createElement("a");
-          wrapper.href = img.src;
-          wrapper.className = "glightbox";
-          img.parentNode.insertBefore(wrapper, img);
-          wrapper.appendChild(img);
+      document.querySelectorAll("article p").forEach(function(p) {
+        const img = p.querySelector("img");
+        if (img && img.parentElement.tagName.toLowerCase() !== "a") {
+          const a = document.createElement("a");
+          a.href = img.src;
+          a.className = "glightbox";
+          p.replaceChild(a, img);
+          a.appendChild(img);
         }
       });
       GLightbox({ selector: 'a.glightbox' });
