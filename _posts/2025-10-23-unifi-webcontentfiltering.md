@@ -26,7 +26,7 @@ UniFi allows users to use a custom DNS per network. You could also use the same 
 
 ## Step 1: Create your [NextDNS account](https://my.nextdns.io/) and configure it
 Create a profile for this setup. I've static IP, so I linked it up. DDNS is also supported. Click ***Show advanced options*** to configure it.
-[![NextDNS Setup](/assets/img/nextdns-profile.png){: width="80%" height="auto"}](/assets/img/nextdns-profile.png){: .glightbox}
+![NextDNS Setup](/assets/img/nextdns-profile.png){: width="80%" height="auto"}
 
 There's a handful of options for you to configure at the ***Parental Control*** tab. I'd added all the categories to restrict access, and enabled these options ***Safe Search***, ***YouTube Restricted Mode*** and ***Block Bypass Methods***.
 ![NextDNS Parental Control](/assets/img/nextdns-parentalcontrols.png){: width="80%" height="auto"}
