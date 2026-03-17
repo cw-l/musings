@@ -19,7 +19,7 @@
   <script src="/assets/vendor/glightbox/glightbox.min.js"></script>
   <script>
     {% if page.layout == 'post' %}
-    document.querySelectorAll('.post-container img').forEach(img => {
+    document.querySelectorAll('.blog-post_content img').forEach(img => {
       const a = document.createElement('a');
       a.href = img.src;
       a.classList.add('glightbox');
