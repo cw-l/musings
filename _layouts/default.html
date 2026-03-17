@@ -18,11 +18,20 @@
 
   <script src="/assets/vendor/glightbox/glightbox.min.js"></script>
   <script>
-    const lightbox = GLightbox({
-      selector: 'article a:has(img), article img'
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll("article img").forEach(function(img) {
+        if (img.parentElement.tagName.toLowerCase() !== "a") {
+          const wrapper = document.createElement("a");
+          wrapper.href = img.src;
+          wrapper.className = "glightbox";
+          img.parentNode.insertBefore(wrapper, img);
+          wrapper.appendChild(img);
+        }
+      });
+      GLightbox({ selector: 'a.glightbox' });
     });
-  </script>  
-
+  </script>
+  
   {% include google-analytics.html %}
 
 </body>
