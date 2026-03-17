@@ -17,6 +17,11 @@
   {% include scripts.html %}
 
   <script src="/assets/vendor/glightbox/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({
+      selector: 'article a:has(img), article img'
+    });
+  </script>  
 
   {% include google-analytics.html %}
 
