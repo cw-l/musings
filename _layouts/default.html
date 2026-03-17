@@ -18,9 +18,19 @@
 
   <script src="/assets/vendor/glightbox/glightbox.min.js"></script>
   <script>
+    {% if page.layout == 'post' %}
+    document.querySelectorAll('.post-container img').forEach(img => {
+      const a = document.createElement('a');
+      a.href = img.src;
+      a.classList.add('glightbox');
+      img.parentNode.insertBefore(a, img);
+      a.appendChild(img);
+    });
+    {% endif %}
+
     const lightbox = GLightbox({ selector: '.glightbox' });
   </script>
-  
+ 
   {% include google-analytics.html %}
 
 </body>
