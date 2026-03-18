@@ -15,12 +15,9 @@ tags:
 >
 > — Zero Trust Architecture NIST.SP.800.207
 
-<br />
 
 This has been tested successfully on the following setup. 
 * UCG Ultra; UniFi OS 5.0.12 & Network 10.1.85
-
-<br />
 
 **Guides**:
 To be successful in implementing ZTA via Network Segmentation using UniFi, it is beneficial to read these guides.
@@ -28,11 +25,8 @@ To be successful in implementing ZTA via Network Segmentation using UniFi, it is
 * [Zone-Based Firewalls in UniFi](https://help.ui.com/hc/en-us/articles/115003173168-Zone-Based-Firewalls-in-UniFi)
 * [Implementing Network and Client Isolation in UniFi](https://help.ui.com/hc/en-us/articles/18965560820247-Implementing-Network-and-Client-Isolation-in-UniFi)
 
-<br />
-
 It is possible to implement ZTA via Segmentation in a home environment with a retail price of SGD 199.00. The [UniFi UCG Ultra](https://sg.store.ui.com/sg/en/category/cloud-gateways-compact/products/ucg-ultra) uses Zone Based Firewall (ZBF) to implement ZTA. You have three levels of isolation available: Zone, Network and Client.
 
-<br />
 
 ## Step 1: Enable ZBF
 After enabling ZBF in UCG Ultra, six default zones and policies would be created and enabled. You only need to assign networks (segments/VLANs/subnets) into its appropriate zone. Each network can only be assigned to one zone. You can also create additional custom zones. You could create a network for your laptops, PCs, tablets and smartphones and assign them to the default Internal zone. Next, you could group all your IoT devices, such as Smart TV, network printer, gaming console, digital lock, fan, CCTV, etc, logically in an IoT network and assign it into the DMZ. With these, you have done both Zone and Network segmentation.
