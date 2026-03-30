@@ -66,18 +66,18 @@ You could create a ProtonVPN egress provider with multiple egress gateways using
   
 2. Now that you've an egress provider, you could proceed to add multiple egress gateways to it. 
 ![Edit Egress Provider](/assets/img/kasm-ce-edit-egress-provider.png){: width="80%" height="auto"}
-<br />You should download your OpenVPN config files from your Proton VPN dashboard, selecting the servers you want/like. Do not paste the entire OpenVPN config file into the `configuration` text-area. Remove the comments and the 3 lines as shown.
+<br /><br />You should download your OpenVPN config files from your Proton VPN dashboard, selecting the servers you want/like. Do not paste the entire OpenVPN config file into the `configuration` text-area. Remove the comments and the 3 lines as shown.
 ![Add Egress Gateway](/assets/img/kasm-ce-add-egress-gateway.png){: width="80%" height="auto"}
-<br />Repeat for as many servers you want/need. This alllows for redundancy.
+<br /><br />Repeat for as many servers you want/need. This alllows for redundancy.
 ![Add Egress Gateway](/assets/img/kasm-ce-egress-gateways.png){: width="80%" height="auto"}
 
-3. Edit the Brave workspace to add new Egress Provider and Egress Credentials.
-![Edit Brave workspace](/assets/img/kasm-ce-edit-brave-ws.png){: width="80%" height="auto"}
-![Add Egress Provider to Brave workspace](/assets/img/kasm-ce-brave-ws-add-egress-provider.png){: width="80%" height="auto"}
+3. Edit the Brave workspace to add new Egress Provider and Egress Credentials.<br />
+![Edit Brave workspace](/assets/img/kasm-ce-edit-brave-ws.png){: width="80%" height="auto"}<br />
+![Add Egress Provider to Brave workspace](/assets/img/kasm-ce-brave-ws-add-egress-provider.png){: width="80%" height="auto"}<br />
 ![Add Egress Creds to Brave workspace](/assets/img/kasm-ce-brave-ws-add-egress-creds.png){: width="80%" height="auto"}
 
-4. Launch your Brave workspace to validate that it is connected to the VPN. Login with your user account and select the Brave workspace.
-![Launch Brave](/assets/img/kasm-ce-launch-brave.png){: width="80%" height="auto"}
-![Launch Brave](/assets/img/kasm-ce-brave-connected-to-vpn.png){: width="80%" height="auto"}
+5. Launch your Brave workspace to validate that it is connected to the VPN. Login with your user account and select the Brave workspace.
+![Launch Brave](/assets/img/kasm-ce-launch-brave.png){: width="80%" height="auto"}<br />
+![Launch Brave](/assets/img/kasm-ce-brave-connected-to-vpn.png){: width="80%" height="auto"}<br />
 
 
