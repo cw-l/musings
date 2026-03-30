@@ -68,7 +68,6 @@ You could create a ProtonVPN egress provider with multiple egress gateways using
 ![Edit Egress Provider](/assets/img/kasm-ce-edit-egress-provider.png){: width="80%" height="auto"}
 <br />You should download your OpenVPN config files from your Proton VPN dashboard, selecting the servers you want/like. Do not paste the entire OpenVPN config file into the `configuration` text-area. Remove the comments and the 3 lines as shown.
 ![Add Egress Gateway](/assets/img/kasm-ce-add-egress-gateway.png){: width="80%" height="auto"}
-
 <br />Repeat for as many servers you want/need. This alllows for redundancy.
 ![Add Egress Gateway](/assets/img/kasm-ce-egress-gateways.png){: width="80%" height="auto"}
 
