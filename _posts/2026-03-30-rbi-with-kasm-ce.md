@@ -14,7 +14,12 @@ This has been tested successfully on the following setup.
 * Kasm Workspaces v1.18.1
 * Ubuntu 24.04 LTS
 
-**Guides**:
+You'll need an old PC, a mini-PC, a cloud VM or an on-premise VM. Here are the specs that I used. 
+* 4 vCPUs
+* 4 GB RAM
+* 100 GB SSD
+
+### Guides:
 To be successful in implementing RBI via Kasm Workspaces, it is beneficial to read these guides.
 * [Kasm Workspaces Licensing](https://docs.kasm.com/docs/latest/license)
 * [Kasm Workspaces - Single Server Installation](https://docs.kasm.com/docs/develop/install/single_server_install)
@@ -35,7 +40,7 @@ Instead, I'll be highlighting some of the teething issues I experienced and how 
 ### RDP Errors
 You might experience RDP connectivity errors on a fresh default installation without doing any custom configurations. 
 ![RDP Connectivity Errors](/assets/img/kasm-ce-rdp-errors.png){: width="80%" height="auto"}
-Do these checks at your host VM. 
+<br/>Do these checks at your host VM. 
 ```bash
 sudo hostnamectl set-hostname kasm01
   <hostname>
@@ -61,11 +66,10 @@ You could create a ProtonVPN egress provider with multiple egress gateways using
   
 2. Now that you've an egress provider, you could proceed to add multiple egress gateways to it. 
 ![Edit Egress Provider](/assets/img/kasm-ce-edit-egress-provider.png){: width="80%" height="auto"}
-You should download your OpenVPN config files from your Proton VPN dashboard, selecting the servers you want/like. Do not paste the entire OpenVPN config file into the `configuration` textarea.
-Remove the comments and the 3 lines as shown.
+<br />You should download your OpenVPN config files from your Proton VPN dashboard, selecting the servers you want/like. Do not paste the entire OpenVPN config file into the `configuration` text-area. Remove the comments and the 3 lines as shown.
 ![Add Egress Gateway](/assets/img/kasm-ce-add-egress-gateway.png){: width="80%" height="auto"}
-Here's how your OpenVPN config file to be pasted should look like.
-```text
+<br />Here's how your OpenVPN config file to be pasted should look like.
+```bash
 client
 dev tun
 proto udp
@@ -110,7 +114,8 @@ down /etc/openvpn/update-resolv-conf
 -----END OpenVPN Static key V1-----
 </tls-crypt>
 ```
-Repeat for as many servers you want/need. This alllows for redundancy.
+
+<br />Repeat for as many servers you want/need. This alllows for redundancy.
 ![Add Egress Gateway](/assets/img/kasm-ce-egress-gateways.png){: width="80%" height="auto"}
 
 3. Edit the Brave workspace to add new Egress Provider and Egress Credentials.
